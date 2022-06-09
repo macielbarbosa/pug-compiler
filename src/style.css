@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  max-width: 1235px;
+  font-family: "Roboto", sans-serif;
+  margin: auto;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.container {
+  border-radius: 10px;
+  width: 100%;
+  max-width: 1236px;
+  background-color: #f5f5f5;
+  padding: 0px 0px 80px;
+}
+
+.bar {
+  width: 100%;
+  height: 83px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.bar img {
+  margin-top: 10px;
+}
+
+.header {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 70px 0px;
+}
+
+.header u {
+  font-weight: bold;
+}
+
+.header > :first-child {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.primary-color {
+  color: #0e4b82;
+}
+
+.content {
+  max-width: 1078px;
+  width: 100%;
+  margin: auto;
+}
+
+.sumaryColumn {
+  display: inline-block;
+  padding: 0px 64px 0px 32px;
+  vertical-align: top;
+}
+.sumaryItem {
+  margin-bottom: 10px;
+}
+.sumaryItem > :first-child {
+  font-size: 12px;
+  color: #323232;
+}
+.sumaryItem > :last-child {
+  font-weight: 600;
+  color: #323232;
+}
+
+.list {
+  padding: 32px;
+  background: #ffffff;
+  border-radius: 5px;
+  color: #333333;
+  margin: 32px 0;
+}
+
+.order {
+  padding: 3px;
+  overflow: auto;
+  margin-bottom: 24px;
+}
+
+table {
+  overflow-x: auto;
+  border-spacing: 0px;
+  width: 100%;
+  border: 1px solid #0e4b82;
+  border-radius: 4px;
+}
+tr > :first-child {
+  border-radius: 5px 0px 0px 0px;
+  padding-left: 16px;
+}
+tr > :last-child {
+  border-radius: 0px 5px 0px 0px;
+  padding-right: 16px;
+}
+tr.spacing td {
+  padding: 4px;
+}
+th {
+  border-bottom: 1px solid #0e4b82;
+  padding: 16px 0px;
+  background: #fbfbfb;
+  font-weight: 600;
+  text-align: center;
+}
+td {
+  padding: 27px 0px;
+  text-align: center;
+}
+td:first-child {
+  font-weight: 600;
+  color: #0e4b82;
+}
+td.sku img {
+  height: 15px;
+  margin-bottom: -2px;
+  margin-right: 10px;
+}
+td .cnpj {
+  font-size: 12px;
+}
+
+.info {
+  text-align: center;
+  width: 100%;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+}
+
+.footer button {
+  padding: 0px 15px;
+  background: #0e4b82;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  border: none;
+  padding: 15px;
+  font-weight: 700;
+}

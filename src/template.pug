@@ -1,0 +1,42 @@
+include order.pug
+
+doctype html
+html(lang="en")
+	head
+		meta(http-equiv="Content-Type" content="text/html; charset=UTF-8")
+		link(href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet")
+		style
+			include style.css
+	body
+		.body
+			.container
+				.bar
+					img(src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPMAAAA9CAYAAAB4FF/7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAA3YSURBVHhe7Z1fiB3VHcfH0lJjxI0VGql1U22pQrkxDzVVWPUhwQjZJn2qzQaFKglsIMGUtmTBPins0j4oCexCghZasm361Ej2QVFodSGp7UPNtlCl9c/2JRH8sxAbpQ/tfM7ML3vuyZmZM3PP3P33+8Bh78y9d/6cc76/8/v9zrmz1/wvJVEUZcXzufyvoigrHBWzoqwSVMyKskpQMSvKKqGvYh6f/mMyMPxUMnn6T/keRVFi0TcxI+SJ6VfN67ETLyXTr7xhXiuKEoe+iNkWsjD6zAsqaEWJSOvzzD4h28yf+mkysP6L+ZaiKE1pdWSuEnLn9ptVyIoSidbEXCXkwY0bkuknv59vKYrSK62IOUTIM+OPJoNfHsj3KIrSK9HFrEJWlKUhqphVyIqydEQTcxMhT7/+72TDj84kY7//e75HUZSmRJmaairkA79dnGceufvWZHLPXfmWoih16XlkjiFkmP5zuu83uohEUZrSk5hjCVlA0DNzF/ItRVk7LHzyafLa3HumuJS9Z9NYzLGFDINfui7p3LL4+X5ARb33/sfJ+bcvmMriNfsUpZ+cOftmMjz2K1Pm0z5oQ7+U98poFDO3JeQzB+5N/67L97THa3PvJjPn3kxmzr51VcXZsEJtZNvm5MDu7+R7FMDwLXzymXm9aeNA2s4bzOtQzqR1PxX4y7nO7RtNO9zX2VT7PE05c+4fycKlz5Lhe+/s2wrFky+/kRx49gXzeu75g133ar+3cOZn5q+P2mJe6UKuun6XobQTcT9KBl7L4MO/yLeSZOc9d9ReyVe3DYSR7ZuTsZEHWhf1znQEnE1HQ1dUbTJ/cSE957vm9cj27kRwqJhrudkcdC0JWbma+YvdnkwvIcnA+muTIyP3F5bR1CPCmArTL583QhOvoC0QVr8ZTD0cROwKuQ61xIxLVUQsIbcVr9IJi4RMp8ICU3itFPPe+/E6+sD115qRtqhM7HvQ9Km55w6lHsA3zXcQ2vj0H8zrtigLvZYztcQ81PlaWsn351uLxBLyXBqLdR47mnQePxq9QonTXHARZ4/uT+ZP/cS4VBRe48rMHt1n3Me9DS0libSQZBrvh362CPl+L8cIxR2Z+wGj1vSTD18ZpRmhQ0bnGHXbBLs9QrLQsWiUAJtI3dXxfJSLKWTbhaIBs+PGiVlGnj6VzJx7K9/KrnvuuYP5Vj1oHOpAwCiQJCOxxgMXZs6+2dXZSOCM7t6a7N2WGQY6Fo9O4nq4bxs67NThXYX3zfdMPPf2xfQ4l7vOI1B3HIfRzXcczs/DIewOTl2D3MPs+Xlz/JHtW8wIeeTES+ZaKfY58WRIUrlInfiQcKduGxBT7hz7tXnN9douuICxmXwhrVtPcpNkFgMS7jsJNYF6MH3vUnZf8j3uq8hTw7hIcoyBYjoNQWmTokHIuNHbtngHQyCpyBN4QNpCaC0BJpCNpOEn9j8UXchCTEFLUkMgmTL1xO58qx525QKdkjqwj+/jSCqu+YsfpWI5n+8ppqizdh47Fuy10BHxLtzj0OE7jx/LtzKIUemQ844bLQkut/6qKKvfpmJGdJJ8m0wNnhhH4WRqhMaOv3hVP/JBW4iwfPVRhd0+o8+cDmpTwLDzXTdLjpaGc0PlCraVBJgN1g3r1JaQgfho8vTr+VZvtJnUoDOEdHRG89BGH332dP6qOXT+kad/F9S5EZcrZLBH76WmLJ+BGA4Yb+MzYyQQDE+xofNLmRl/5MrAQFswPQnZ5x8xZeqJXWYf4Fmw7Su2gdybei/sIzRzz0nBGMp56e9tPdCysZhdYgsZaDzX+jZl4PpuS1g1x9wUGo2GrvImuDf5rK+TZlMVfgNhf9cuvnMixl46DyMJYLSr7slmU43PhlJmWBAySB4kq9fuNsfFJi/Ce2DXC+9lZVGkhEaSYXaLDd9hH3Xlm5c213Rs35VwBK82xMDWJZqYp159J391NU2FjHX1xWNNsBsJ6Bi4rFwDbh9xcC+jEHElVpnOwnXzl30uMmrMPX/oymdJuvliKeIol9ljiwk7vmsX9jFCuB0q5MGJ1HfmGu9Kj/WIGWX4S9wNU4d3m+O77UG9uiMRBTc2NnZ92MaCUVm8ion9O7yCspG6xli2YdB9UL+ju7IcAv1M5pRjEk3MI1tvzV9100TIMJXGRLGEDMOpdfRBg+JislSOeIzrOnLiRW/2uwgEStjhdiJ3nhQY4djnfpbO7+7zGZeqjuobORYuVRup8f0PpkLebb7LCMUow1/3fD4vol8Q0wP1bdereDDss8O+Irgv8TJIWvULO+n2cQ8DRxHRxDx6/23JkR3ZXKAwsO4LyckffruRkHFNYkIDFmUSbegYU2mcvjeNNZkik6x9U0I6lzCwfrGeeqFzW+YaC8znrnTwniTf4IZe9CmQkCAEkqvQhqhCaCMMKRUzMQWJGF8hc+iCmEXQCJkRuXPLDWYbQoU84omTaUzfdVCKYksXRj/cyNDYj7jVnoZbTjBqy49DpGRrpj/1jugrEeZp6YP0GVnwI16QjfSnKq9ltVM6NcW/kimD2MjH7L8+SAZvvK5rRCbjS6P4MqZCkZAxAkOHTuRbVyPTJ3XgmLhYiCAkdrKf7+2bmiqaYnGnLXAFiW99uNNOTBdJzCpwbjMPnF5zKO71+aZifFM9PmhD+9xl91OETE3VhXMRu7vejtQbo22ooZZ7cO/brhtyBCHHw3jSLnPvXDDz8yDtyPfxjOg7FFnrQJ3ZoULrU1NVlq5IAENfvymakKENVwiXjPiQ89JoLBnEIHANvvvmlzRLDSKgUesIeTWAsZYkX1nYIjMAISUW9O2hg8ezf7n08nmjCVsXvGbg4Jz2oqU2KBUzFr2MkORBr0KGqvNUXWcIWHU6DdfiG+X7mSjxQT36RjMsv11WEiTTjCH1FNuVxjuxR7EiMtFn88WhZfieO/NvN0P6NvfCdXLtktGXglfH7IBvdiMmpWLu3FaeTcZFrSKzVM2FDDK5X4SdJYyBL5HC0salhCWKNhgw5lNdEdB5qupzuYD76RojKSQr+QujVkjjQ5JZzH5kc8Xhpcr7LMOeEsNrICySa7bhHPSp2Eldl3IxV2QHmSooS2YBFVaURQ4RMiNSlVvkq8DYxMo0N8X1DEZ3bTWd14d07n7Q1lQVx506/F3zGjeV6cIixPUuCvvaQtoEncScRm1KqZiL5maFLPD/a75VjL0OVggRMhAnlsEIFbsieYSLSy8WvA2WarrJjVnbzJwzEIi7zXRhkVGXQYdVff1E7n259I3KmLkqViGOqxqdQQSdWdwwITMqV61lDomlgNiGjDhrlZnuYFEIYYL9czWmdjAeY55R4L60Yy0lbofhl1k+cP1iJnhcXCPCuXpZLlpFt7t92tvXNufGHHH1eu92/qUqjBSvpCyM7CelYoYqsVCBZS6QDYJmKWJoTIcAqziQL5ELAXeN+JvMI4tCWPW1+bFjV8p9qdh9xinEqLWN3cmA+6B+MD4UOjpTNExvtClmd0EKUJ8ssOF6KFwH1xMD290mW+17MAEjuHhnnLdXd1uMh6w4K0KMSEgoiE7cvEdsKsXML0eq3AhuOvbCCn5vW2XxEFg/YpWimL+f+EIeOhDGhyLTIm0zfO8d3v5gTwuZpGe6HQvX3fYlRCVTzHkxKHgL7tp2vC88MlmIUhTCsUYduBefcRD32k6g8TkWUsl7IOdjsOOhG1x7m1SKGcvorrjxEXOlFEIO+XGAu6AiNtz7xL4dyyI7bHfoMrhmecROG0id9BvEemX0NYa+W2DUjxhdBI23gKfFwicpeF94ZLwnRscHA9ji6HzeeBpSBh/+uVnDLysgWcQCnJNfbvGee75MxNeYemszWVspZggZnQFB9+Lm4K4MHToeJOTsBwHhri8/IqBD0NHLRnM6K8fN5gwPpQLamr+zyIarplSKs8cbrl/X9dnNJTMEsoJJyibHteb67RjShn1yza7YuCcb4l7qwD7XBuczZVD3LLIpqn/OV5ZjYF1ydt56WXeW4nLdHN+XMyCM47owvhzfB/sZeVlLMLHvoXxvN+b44492Hcd4G2khBGOfrK2WuW1fXXAc+hvtJn1J6t1tE+qf/XI+G+lvVbNLwU8awbUheRQCnZJHpOxNK813cS4mnkhdn9DfeVIR/BSwbmdw4Vz2/DHTTyFGazlA/E+9UReDG29c0uu2r0XmjpcDbvs2vS77OGV9JPRzbVHrsUE8Byr04eUCliuLbW82IheYo2Mkxkjg8tQhNBuuKGuJWmLG+pI4WMqljbiSrLRRFKWbWmIGBD108ETjuLgXVMiKUkxQAsyGuIjkQFkSqQ1UyIpSTu2R2aZJDF0XjAdCtrPKC5f/a/7yAARFUTJ6EjPIgpE23G4SZ/aP0ec//I/5h+w8/AD43fTknrvMc8YUZa3Ts5iBOJoR+mSkVUgsXWQ+1c1Yb37qlWT+o+6fIg7euC557ccPpKP05/M9irI2iSJmIVvS965Zg1o34407TRyOS+2bgJ+Zu5Ds/eVf8q1uxr/3LfNAQUVZy0QVsw3C5plI/PJEFhXI//IBHkqP+8yCB9YdMw9dNsk+8eJbpviwHySoKGuV1sQcm9l/fpAMT57Nt7qZ3LMlGbn7q/mWoqxNak9NLRVD37gp6Xxl8bG9AskvFbKirKCRGeY/vGxc7Zm/5Q89v+WGZPIHW7qeBKooa5UVJWZFUYpZMW62oijlqJgVZZWgYlaUVYKKWVFWBUnyfxjhzH/eLIW5AAAAAElFTkSuQmCC')
+				.content
+					.header
+						div Olá <b class='primary-color'>#{name}</b>,
+						div O lote de pedidos <u>Nº #{id}</u> foi cadastrado no SmartRetail.
+					.sumaryColumn
+						each item in [{ field: 'Conta', value: conta }, { field: 'Varejo', value: varejo }]
+							.sumaryItem
+								div #{item.field}
+								div #{item.value}
+					.sumaryColumn
+						each item in [{ field: 'Cliente', value: cliente }, { field: 'Nº da Negociação', value: numeroNegociacao }]
+							.sumaryItem
+								div #{item.field}
+								div #{item.value}
+					.sumaryColumn
+						.sumaryItem
+							div Cond. de pagamento
+							div #{condicaoPagamento}
+					.list
+						each item in orders.slice(0,10)
+							+order(item)
+						- const surplusQuantity = orders.length - 10
+						if surplusQuantity > 0
+							.info 
+								span Para visualizar mais #{surplusQuantity} pedido#{surplusQuantity > 1 ? 's' : ''}, acessar o SmartRetail
+					.footer 
+						a(href=`${link}` target='_blank')
+							button Abrir pedido completo no SmartRetail

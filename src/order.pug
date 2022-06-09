@@ -1,0 +1,31 @@
+
+mixin order(value)
+  .order
+    table
+      tr.row-header
+        th Pedido
+        th SKU
+        th CD/CNPJ
+        th OC
+        th Quantidade
+        th Preço unitário (+IPI)
+        th Previsão de faturamento
+        th Comissão
+      tr.row-data
+        td Nº #{value.id}
+        td.sku
+          if value.internacional
+            img(src='data:image/png;base64,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')
+          span #{value.sku}
+        td 
+          span #{value.cd}
+          br
+          span.cnpj #{value.cnpj}
+        td Nº #{value.oc}
+        td #{value.quantidade}
+        td #{value.precoUnitario.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}
+        td #{value.previsaoFaturamento}
+        td #{value.comissao}%
+
+
+    
